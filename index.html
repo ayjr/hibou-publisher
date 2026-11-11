@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hibou Publisher</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;600&display=swap">
+<style>
+/* Layout: single reading column, owl-museum palette (burgundy + brass) from the series */
+:root{--bg:#faf6f2;--fg:#2a1c22;--muted:#6d5a61;--accent:#8a2438;--brass:#a8822c;--rule:#e6dcd5;
+--display:"Fraunces",Georgia,serif;--body:"Inter",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1317;--fg:#f1e7ea;--muted:#b6a3aa;--accent:#e2788b;--brass:#d6b25e;--rule:#3a2a31;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1b1317;--fg:#f1e7ea;--muted:#b6a3aa;--accent:#e2788b;--brass:#d6b25e;--rule:#3a2a31;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:16px/1.65 var(--body)}
+main{max-width:65ch;margin:0 auto;padding-block:48px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:40px}
+h1,h2{font-family:var(--display);text-wrap:balance;margin:0}
+h1{font-size:2.2rem;color:var(--accent)}
+h2{font-size:1.4rem;padding-top:8px;border-top:2px solid var(--brass)}
+.eyebrow{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
+section{display:grid;gap:12px}p,ul{margin:0}ul{padding-left:1.2em;display:grid;gap:6px}
+small{color:var(--muted)}a{color:var(--accent)}
+</style>
+</head>
+<body>
+<main>
+<header>
+<p class="eyebrow">Outil interne · série « Énigme du Hibou »</p>
+<h1>Hibou Publisher</h1>
+<p>Hibou Publisher est un outil privé qui publie les vidéos d'énigmes de l'Inspecteur Plume sur les comptes appartenant à son auteur (TikTok, Instagram, Facebook, YouTube). Il n'est pas proposé au public.</p>
+<small>Dernière mise à jour : 11 novembre 2026</small>
+</header>
+
+<section id="conditions">
+<h2>Conditions d'utilisation</h2>
+<ul>
+<li>L'outil est utilisé uniquement par son auteur, pour ses propres comptes.</li>
+<li>Chaque publication est confirmée manuellement avant l'envoi.</li>
+<li>Les contenus publiés sont créés par l'auteur et respectent les règles de chaque plateforme.</li>
+<li>L'outil est fourni tel quel, sans garantie de disponibilité.</li>
+</ul>
+</section>
+
+<section id="confidentialite">
+<h2>Politique de confidentialité</h2>
+<ul>
+<li>Données utilisées : l'identifiant et le nom du compte connecté, et les jetons d'accès accordés par la plateforme.</li>
+<li>Les jetons sont stockés uniquement sur l'ordinateur de l'auteur, chiffrés par le Gestionnaire d'identification Windows. Ils ne sont ni vendus ni partagés.</li>
+<li>Aucune donnée d'autres utilisateurs n'est collectée.</li>
+<li>Pour retirer l'accès, il suffit de révoquer l'application dans les paramètres de la plateforme concernée : <a href="https://security.google.com/settings/security/permissions">autorisations du compte Google</a>, paramètres TikTok (Sécurité → Applications), <a href="https://www.facebook.com/settings?tab=business_tools">intégrations professionnelles Meta</a>. Les jetons locaux sont alors inutilisables et supprimés à la prochaine connexion.</li>
+<li>Les données obtenues via les API ne sont jamais conservées plus de 30 jours, sauf l'identifiant et le lien des vidéos publiées, gardés pour le suivi des publications.</li>
+</ul>
+<p><strong>YouTube.</strong> Hibou Publisher utilise les services d'API YouTube. En l'utilisant, tu acceptes les <a href="https://www.youtube.com/t/terms">Conditions d'utilisation de YouTube</a>. Les données sont traitées selon les <a href="https://policies.google.com/privacy">Règles de confidentialité de Google</a>.</p>
+<p><strong>TikTok, Instagram, Facebook.</strong> Les publications respectent les conditions de chaque plateforme : <a href="https://www.tiktok.com/legal/terms-of-service">TikTok</a>, <a href="https://help.instagram.com/581066165581870">Instagram</a>, <a href="https://www.facebook.com/terms">Facebook</a>.</p>
+<p>Contact : message privé au compte TikTok ou Instagram <strong>@enigme.du.hibou</strong>.</p>
+</section>
+</main>
+
+</body>
+</html>
