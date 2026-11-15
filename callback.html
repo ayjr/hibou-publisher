@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Hibou Publisher, connexion</title>
+<style>body{font:16px/1.5 system-ui,sans-serif;max-width:520px;margin:15vh auto;padding:0 20px;color:#222}</style>
+</head>
+<body>
+<h1>Connexion en cours…</h1>
+<p id="msg">Retour vers Hibou Publisher sur ton ordinateur.</p>
+<script>
+// Meta only accepts https return addresses for live apps. This page hands the sign-in
+// answer (code + state) to the local publisher tool listening on localhost:8765.
+// Nothing is stored or sent anywhere else.
+const q = location.search;
+if (q.includes("code=") || q.includes("error=")) {
+  location.replace("http://localhost:8765/" + q);
+} else {
+  document.getElementById("msg").textContent = "Rien à transmettre : ouvre la connexion depuis Hibou Publisher.";
+}
+</script>
+</body>
+</html>
